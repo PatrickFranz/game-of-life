@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
+#heading {
+  text-align: center; }
+
+#main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center; }
+  #main-container .bottom {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); }
+    #main-container .bottom .stats > * {
+      font-size: 1.5rem; }
+
+#world {
+  border: 1px solid black;
+  width: 800; }

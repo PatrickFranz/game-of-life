@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Game Of Life</title>
+</head>
+<body>
+  <div id="heading">
+    <h2>Game of Life Simulation</h2>
+  </div>
+    
+  <div id="main-container">
+    <canvas id='world' height='400' width='800'>
+      <p>Your browser isn't able to display this Game of Life.</p>
+      <p>Consider upgrading to a modern browser such as <a href="https://www.google.com/chrome/browser/desktop/index.html">Google Chrome</a> or <a href="https://www.mozilla.org/">Firefox</a></p>
+    </canvas>
+    <div class="bottom">
+      <div class="explaination">
+        <h3>The Rules</h3>
+        <p>There are two lifeforms in this Game Of Life simulation; wolves and rabbits. With each tick of simulation the animals have the possibility of breeding or dying. </p>
+        <p>The simulation starts with a preset number of Wolves and Rabbits being populated in a random place on the map.</p>
+        <ol>
+          <li>Any life form will die if they are alone as with under population </li>
+          
+          <li>An animal will die if it is surrounded by more than 3 others as with over population.</li>
+
+          <li>If an animal is in close proximity to a animal of the same species there is a chance they will breed.</li>
+        </ol>
+      </div>
+      <div class="stats">
+          <h3>Stats</h3>
+          <ul>
+            <li>Number of Wolves: <span class='wolf-count'></span></li>
+            <li>Number of Rabbits: <span class='rabbit-count'></span></li>
+            <li>Months: <span class="time-count"></span></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+  
+</body>
+</html>

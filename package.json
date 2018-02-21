@@ -1,0 +1,28 @@
+{
+  "name": "game-of-life",
+  "version": "1.0.0",
+  "description": "A simple version of Game Of Life simulation",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "node-sass": "^4.7.2",
+    "parallelshell": "^3.0.2",
+    "run-script-os": "^1.0.2"
+  },
+  "scripts": {
+    "sass": "node-sass --watch scss/*.scss -o css/",
+    "serve": "browser-sync start --server --files '**/*.css, **/*.js, *.html'",
+    "start": "parallelshell 'npm run sass' 'npm run serve'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrickFranz/game-of-life.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatrickFranz/game-of-life/issues"
+  },
+  "homepage": "https://github.com/PatrickFranz/game-of-life#readme"
+}
